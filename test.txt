@@ -1,7 +1,7 @@
 This is a small testfile to show you how to collaborate with others on a shared dataset using GitHub
-Below, type your name, date and what you've done today!
+Below, type your name, date and student number, and your expectations for this course. What would you like to learn? What do you expect to learn and what will you use it for it the future?
 
-Runa - 30-10-2015
-I ate pizza at GAOS today!
+Runa - 30-10-2015, 10268863
+I expect to learn how manage my research data online in a collaborative environment! 
 
 ...
