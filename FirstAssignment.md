@@ -10,12 +10,12 @@ reate a GitHub account on [GitHub.com](https://www.github.com).
 Open github and gitshell
 
 Now create a repo (repository) on your own device, containing your own reserach data.
-Read the folloing information about it on github.com: [Creating a Repo](https://help.github.com/articles/create-a-repo/)
+Read the following information about it on github.com: [Creating a Repo](https://help.github.com/articles/create-a-repo/)
 
-On github.com ou log in and you create a repo on your own device
+On github.com you log in and you create a repo on your own device
 
 ```
-1. Clicj the plus-icon on the top left
+1. Click the plus-icon on the top left
 2. Name your repo (your name + project number)
 3. Enter a sort description
 4. Create the public repository
