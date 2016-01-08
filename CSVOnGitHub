@@ -1,0 +1,77 @@
+## Collaboratively editing a .csv file using GitHub
+
+To work on our assignments collaboratively, we need a proper data format to organize all our combined data, access for everyone and protocols for who gets to edit what.
+To achieve this we will be using GitHub and .csv file.
+
+.csv files are tables in text format, the position of the columns and rows is indicated by separating each value field by a character such as a comma or a semicolon.
+The benefit of .csv's as opposed to excel files is that any text editing program can open them 9they're plain text), and GitHub can use them.
+
+If I have a table on GitHub in .csv it will simply look something like this:
+
+NAME, NAME, NAME
+1,4,5
+2,6,3
+3,5,9
+
+Each row of the table is on a specific line in the text file, and all columns are separated by a comma.
+
+#### Using the templates from the assignment repositories
+
+The repositories for each assigment contain a .csv as shown above, with values indicating that they're still empty ("NA", for not available). 
+You will fork these files into your own repositories and cloen them to your own device:
+
+'''
+cd C:\Users\[YourName]\Documents\GitHub
+git clone [URL of your repository]
+'''
+
+Now open the .csv on your device, in a text editor of your choice (notepad, notepad++, excel, etc).
+Add the data you want to add. Make sure to not alter the structre of the .csv, and to only fill in values in the rows/columns with your group number/name/etc indicated.
+Leave the rest as is.
+
+Send this file with added entries back to your own GitHub repository:
+
+```
+cd "[pathtoyourrepository]" 
+git add -A 
+git commit -m "[type a message describing what you edited - a "commit message"]"
+git push
+```
+
+Navigate to your fork on github.com. Click on the green button on the top left (compare, retire, pull request). This menu gives you an overview of everything that has changed between your version and the master branch. Also, it indicates whether a merge can be executed succesfully or not. If this is not the case, you've probably changed some fundamental formatting in your version (or the master branch has accepted such a change).
+Review the changes. Are they correct? Then you can send it to the Classroom Repository, the "master branch" of this file.
+In your pull request message, provide all the necessary metadata. 
+
+To send the pull request:
+Navigate to the original master branch on github.com and copy its URL.
+
+```
+cd "[pathtoyourfolder]\GitHub\FirstSteps"
+git remote -v
+git remote add upstream [copied URL]
+```
+
+To check whether this worked:
+
+```
+git remote -v
+```
+
+Under "origin" it should say the URL of your fork
+Under "upstream" it should say the URL of the master branch
+
+#### A Cheat
+
+If you find working with the command line bothersome, it is also possible to transfer data to your own personal GitHub page the following way:
+
+From your own .csv text file, copy all the data.
+Open your GitHub page, navigate to your personal version of the dataset and click the edit sign.
+Now simply remove the old data and paste the new data that you copied.
+
+But of course this does not work for sending a pull request to the master branch.
+However, there is an easier way to do this. Navigate to your own version of the .csv on GitHub. Click the green "compare&review" button (the one with the arrows).
+You will get an overview of what you have changed relative to the master branch (The one on the UvARDM page). You could be some steps ahead, some steps behind.
+It will also say whether you are able to merge with the master branch. In case you can, you can send the pull request, accompanied by a message that tells the owner of the master branch what you did and who you are.
+
+It depends on your personal preferences what you will msot likely be using. The command line is simple and doesn't involve a lot of browsing and copying and pasting. Also, it gives a quick overview of the pathnames and URLs you are copying to and from.
+The method described above as a cheat is simpler for those with little experience in coding and has a more intuitive layout. 
